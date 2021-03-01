@@ -6,43 +6,68 @@
     <script src="./script.js"></script>
     <title>Inspirational Quotes</title>
     <style>
+
         body{
-            background-color: #959595 ;
+          /*#959595*/
+          background-color: #959595;
+        }
+        .quote{
+          position: absolute;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -40%);
         }
 
-        .quote{
-          font-size: 1vw; 
+        .quote h1{
+          font-size: 2vw; 
           font-family: Arial, Helvetica, sans-serif;
           color: #eceadf;
           text-shadow: 3px 4px #aaaaaa;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
         }
 
         .quoteButton{
-            font-size: 0.8vw; 
+          display: inline-block;
+            font-size: 1vw; 
             font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            background-color: #dfe6e9;
+            color: #959595;
+            border: none;
+            border-radius: 0.317rem;
+            text-decoration: none;
+            box-shadow: 3px 3px 0 0 #aaaaaa;
+
             position: absolute;
-            padding-left: 50px;
-            padding-right: 50px;
-            top: 100%;
-            left: 50%;
+            padding-top: 0.3em;
+            padding-bottom: 0.3em;
+            padding-left: 3em;
+            padding-right: 3em;
             width: auto;
             max-width: 100%;
             height: auto;
-            transform: translate(-50%, 90%);
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
+        .btn{
+          cursor: pointer;
+        }
+
+        .btn:hover{
+          opacity: 0.85;
         }
     </style>
 </head>
 <body>
     <div class="quote">
         <h1>Don't worry about what anybody else is going to do. The best way to
-            predict the future is to invent it.</br>
+            predict the future is to invent sdfsdfsdfsdfsdfsdfsd fsd f sdf sdf sd fsdfsd fsd f sdf sd f sdf  sdf sdfsd fs df sd f sd fs df s df sd f sdf sdfsdf sdf sf  dfsd f sdf s df  dsf sd f sd f sd f sd f sd f sf sd f sd f sd fs d fs df sdf sdf sd f sf  sit.</br>
             -- Alan Kay</h1>
-    <button class="quoteButton" onclick="newQuote()">New Quote</button>
+            <div class="btn">
+              <p class="quoteButton" onclick="newQuote()">New Quote</p>
+            </div>
+      
     </div>
 </body>
 </html>
