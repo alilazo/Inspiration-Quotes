@@ -1,0 +1,1 @@
+const newQuote = () => {alert("asdasd")};

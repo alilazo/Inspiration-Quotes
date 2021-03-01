@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <title>Inspirational Quotes</title>
+    <style>
+        body{
+            background-color: #959595 ;
+        }
+
+        .quote{
+          font-size: 1vw; 
+          font-family: Arial, Helvetica, sans-serif;
+          color: #eceadf;
+          text-shadow: 3px 4px #aaaaaa;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .quoteButton{
+            font-size: 0.8vw; 
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            padding-left: 50px;
+            padding-right: 50px;
+            top: 100%;
+            left: 50%;
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            transform: translate(-50%, 90%);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="quote">
+        <h1>Don't worry about what anybody else is going to do. The best way to
+            predict the future is to invent it.</br>
+            -- Alan Kay</h1>
+    <button class="quoteButton" onclick="newQuote()">New Quote</button>
+    </div>
+</body>
+</html>
