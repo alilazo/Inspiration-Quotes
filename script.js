@@ -14,6 +14,7 @@ let quotes = ['Don\'t worry about what anybody else is going to do. The best way
 'If we wish to count lines of code, we should not regard them as *lines produced* but as *lines spent*. -- Edsger Dijkstra	',
 'Lisp is worth learning for the profound enlightenment experience you will have when you finally get it; that experience will make you a better programmer for the rest of your days, even if you never actually use Lisp itself a lot. -- Eric S. Raymond'];
 
+$('#errorMessage').css("visibility", "hidden");
 $(document).ready(function () {
     newQuote();
     console.log("Made By: Amado Lazo");
