@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./jquery-3.5.1.js"></script>
     <script src="./script.js"></script>
     <title>Inspirational Quotes</title>
     <style>
 
         body{
           /*#959595*/
-          background-color: #959595;
+          background-color: #353b48;
         }
+
         .quote{
           position: absolute;
           top: 40%;
@@ -18,37 +20,47 @@
           transform: translate(-50%, -40%);
         }
 
+        .card{
+          display: block;
+          background-color: #487eb0;
+          border-radius: 0.317em;
+          box-shadow: 0.2em 0.2em 0em 0em #40739e;
+          position: absolute;
+          padding-left: 2em;
+          padding-right: 2em;
+        }
+
         .quote h1{
           font-size: 2vw; 
           font-family: Arial, Helvetica, sans-serif;
-          color: #eceadf;
-          text-shadow: 3px 4px #aaaaaa;
+          color: #f5f6fa;
+          text-shadow: 0.05em 0.1em 1px #353b48;
         }
 
         .quoteButton{
           display: inline-block;
-            font-size: 1vw; 
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 700;
-            text-decoration: none;
-            background-color: #dfe6e9;
-            color: #959595;
-            border: none;
-            border-radius: 0.317rem;
-            text-decoration: none;
-            box-shadow: 3px 3px 0 0 #aaaaaa;
+          font-size: 2vw; 
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 700;
+          text-decoration: none;
+          background-color: #487eb0;
+          color: #f5f6fa;
+          border: none;
+          border-radius: 0.317rem;
+          text-decoration: none;
+          box-shadow: 0.2em 0.2em 0 0 #40739e;
 
-            position: absolute;
-            padding-top: 0.3em;
-            padding-bottom: 0.3em;
-            padding-left: 3em;
-            padding-right: 3em;
-            width: auto;
-            max-width: 100%;
-            height: auto;
-            left: 50%;
-            transform: translateX(-50%);
-        }
+          position: absolute;
+          padding-top: 0.5em;
+          padding-bottom: 0.5em;
+          padding-left: 3em;
+          padding-right: 3em;
+          width: auto;
+          max-width: 100%;
+          height: auto;
+          left: 50%;
+          transform: translateX(-50%);
+        } 
 
         .btn{
           cursor: pointer;
@@ -57,17 +69,33 @@
         .btn:hover{
           opacity: 0.85;
         }
+
+        .btn:active{
+          transform: translate(-50%, 0.2em);
+        }
+
+        .github{
+          -webkit-filter: grayscale(1) invert(1);
+          filter: grayscale(1) invert(1);
+          position: fixed;
+          width: auto;
+          max-width: 5%;
+          height: auto;
+          bottom: 0;
+          left: 0;
+        }
+        .github:hover{
+          opacity: 0.85;
+        }
     </style>
 </head>
 <body>
-    <div class="quote">
-        <h1>Don't worry about what anybody else is going to do. The best way to
-            predict the future is to invent sdfsdfsdfsdfsdfsdfsd fsd f sdf sdf sd fsdfsd fsd f sdf sd f sdf  sdf sdfsd fs df sd f sd fs df s df sd f sdf sdfsdf sdf sf  dfsd f sdf s df  dsf sd f sd f sd f sd f sd f sf sd f sd f sd fs d fs df sdf sdf sd f sf  sit.</br>
-            -- Alan Kay</h1>
-            <div class="btn">
-              <p class="quoteButton" onclick="newQuote()">New Quote</p>
-            </div>
-      
+    <div class="quote card" id="boxCard">
+        <h1 id="quote"></h1>
+        <div id="newQuoteButton">
+          <p class="quoteButton btn">New Quote</p>
+        </div>
     </div>
+    <a href="https://github.com/alilazo/Inspiration-Quotes"><img class="github" src="./GitHub-Mark.png"></a>
 </body>
 </html>
